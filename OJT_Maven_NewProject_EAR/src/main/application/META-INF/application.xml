@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_5.xsd" version="5">
+  <description>Huawei U2000 NMS Sweep. EH and Microwave Adapter</description>
+  <display-name>huawei-u2000-adapter</display-name>
+  <module>
+    <ejb>huawei-u2000-adapter.jar</ejb>
+  </module>
+  <library-directory>APP-INF/lib</library-directory>
+</application>

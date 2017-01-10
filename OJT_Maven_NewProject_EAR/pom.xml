@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>OJT_Maven_NewProjectJAR</groupId>
+		<artifactId>OJT_Maven_NewProjectJAR</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>OJT_Maven_NewProject_EAR</artifactId>
+	<packaging>ear</packaging>
+
+	<name>Huawei U2000 Adapter EAR packaging</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.ericsson.ca.vfe.edr.adaprers.u2000</groupId>
+			<artifactId>huawei-u2000-adapter-jar</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>ejb</type>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-ear-plugin</artifactId>
+				<configuration>
+					<modules>
+						<ejbModule>
+							<groupId>com.ericsson.ca.vfe.edr.adaprers.u2000</groupId>
+							<artifactId>huawei-u2000-adapter-jar</artifactId>
+							<bundleFileName>huawei-u2000-adapter.jar</bundleFileName>
+						</ejbModule>
+					</modules>
+					<displayName>Huawei U2000 Adapter EAR</displayName>
+					<finalName>${project.parent.artifactId}</finalName>
+					<generateApplicationXml>false</generateApplicationXml>
+					<defaultLibBundleDir>APP-INF/lib</defaultLibBundleDir>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<groupId>OJT_Maven_NewProject_EAR</groupId>
+	<version>0.0.1-SNAPSHOT</version>
+</project>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wls:weblogic-application
+	xmlns:wls="http://xmlns.oracle.com/weblogic/weblogic-application"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/javaee_5.xsd http://xmlns.oracle.com/weblogic/weblogic-application http://xmlns.oracle.com/weblogic/weblogic-application/1.3/weblogic-application.xsd">
+	<wls:prefer-application-packages>
+		<wls:package-name>javax.xml.soap.*</wls:package-name>
+		<wls:package-name>javax.jws.*</wls:package-name>
+		<wls:package-name>com.sun.xml.messaging.saaj.*</wls:package-name>
+		<wls:package-name>com.ctc.*</wls:package-name>
+		<wls:package-name>com.sun.xml.*</wls:package-name>
+		<wls:package-name>com.sun.istack.*</wls:package-name>
+		<wls:package-name>com.sun.msv.datatype.*</wls:package-name>
+		<wls:package-name>com.sun.msv.driver.*</wls:package-name>
+		<wls:package-name>com.sun.msv.grammar.*</wls:package-name>
+		<wls:package-name>com.sun.msv.reader.*</wls:package-name>
+		<wls:package-name>com.sun.msv.relaxns.*</wls:package-name>
+		<wls:package-name>com.sun.msv.scanner.*</wls:package-name>
+		<wls:package-name>com.sun.msv.util.*</wls:package-name>
+		<wls:package-name>com.sun.msv.verifier.*</wls:package-name>
+		<wls:package-name>com.sun.msv.writer.*</wls:package-name>
+		<wls:package-name>com.sun.org.apache.xml.internal.*</wls:package-name>
+		<wls:package-name>com.sun.wsit.*</wls:package-name>
+		<wls:package-name>javax.jws.*</wls:package-name>
+		<wls:package-name>javax.xml.bind.*</wls:package-name>
+		<wls:package-name>javax.xml.stream.*</wls:package-name>
+		<wls:package-name>javax.xml.ws.*</wls:package-name>
+		<wls:package-name>javax.xml.activation.*</wls:package-name>
+		<wls:package-name>javax.xml.annotation.*</wls:package-name>
+		<wls:package-name>javax.xml.mail.*</wls:package-name>
+		<wls:package-name>javax.xml.security.*</wls:package-name>
+		<wls:package-name>javax.xml.registry.*</wls:package-name>
+		<wls:package-name>javax.xml.rpc.*</wls:package-name>
+		<wls:package-name>javax.xml.crypto.*</wls:package-name>
+		<wls:package-name>org.apache.commons.lang.*</wls:package-name>
+	</wls:prefer-application-packages>
+	<wls:prefer-application-resources>
+		<wls:resource-name>META-INF/services/*</wls:resource-name>
+	</wls:prefer-application-resources>
+</wls:weblogic-application>
